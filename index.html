@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Frank Zhuang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Frank Zhuang</h1>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Frank Zhuang</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>About Me</h2>
+								</header>
+								<div class="profileWrapper">
+									<a class="image main"><img src="images/profile.jpg" class="profileImage" alt="profile" /></a>
+									<div class = "profileText">
+										<p>
+											I'm Frank, an undergraduate student working towards both my bachelor's and master's in computer science
+											at the University of Southern California. In my current role as the Software Responsibility Engineer at 
+											USC's Liquid Propulsion Laboratory, I am designing and creating their next data acquisition and controls
+											system.
+										</p>
+										<p>
+											I am an aspiring software developer with a deep-seated passion for automation and the intricacies of algorithms. 
+											My enthusiasm knows no bounds when it comes to tackling these complex challenges.
+										</p>
+										<ul class="actions special">
+											<li><a href="https://drive.google.com/file/d/1QzU49yrHbQ9wWWCfkU2r1xcUl1lmZzJg/view?usp=sharing" target = "_blank" class="button">Resume</a></li>
+										</ul>
+									</div>
+								</div>
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+									<h2>USC Liquid Propulsion Lab</h2>
+								</header>
+								<a class="image main"><img src="images/hotfire.jpg" alt="" /></a>
+								<p>
+									For the past two years, I have been working at USC's Liquid Propulsion Lab,
+									a lab dedicated to designing and testing custom liquid propelled rocket engines.
+									Since joining, I have been involved in the creation of the lab's data acquisition 
+									and control system (DAC) and assisted in the lab's research on particle analysis on
+									lab's inconel engine. 
+								</p>
+								<ul class="actions special">
+									<li><a href="http://usclpl.com/" target="_blank" class="button large">LPL Website</a></li>
+									<li><a href="#CP_DAC" class="button large">DAC and Controls</a></li>
+								</ul>
+							</article>
+							<section class="titlebar">
+								<h2>Personal Projects</h2>
+								<p>
+									Aside from my contributions to LPL, I also have a few personal projects.
+								</p>
+							</section>
+						<!-- Posts -->
+
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="#CP_FDB">Custom Database</a></h2>
+									</header>
+									<a href="#CP_FDB" class="image fit"><img src="images/FDB.jpeg" alt="FDB img" /></a>
+									<p>Database implementation using the FDB api</p>
+									<ul class="actions special">
+										<li><a href="#CP_FDB" class="button">Learn More</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="#CP_dice">Markov Decision</a></h2>
+									</header>
+									<a href="#CP_dice" class="image fit"><img src="images/dice.jpeg" alt="dice img" /></a>
+									<p>Markov Decision Tree on the game Fool's Dice</p>
+									<ul class="actions special">
+										<li><a href="#CP_dice" class="button">Learn More</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="#CP_text">Text Classifier</a></h2>
+									</header>
+									<a href="#CP_text" class="image fit"><img src="images/textLayout.png" alt="text img" /></a>
+									<p>Uses machine learning models to classify text as positive or negative</p>
+									<ul class="actions special">
+										<li><a href="#CP_text" class="button">Learn More</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#CP_perceptron">Neural Network</a></h2>
+									</header>
+									<a href="#CP_perceptron" class="image fit"><img src="images/perceptron.png" alt="perceptron img" /></a>
+									<p>Single layered perceptron model for classifying movie review sentiments.</p>
+									<ul class="actions special">
+										<li><a href="#CP_perceptron" class="button">Learn More</a></li>
+									</ul>
+								</article>
+
+
+
+								
+							</section>
+
+						<!-- Footer -->
+
+					</div>
+
+					<div id = "codePost">
+						<article id = "CP_DAC">
+							<h2 class="major">DAC and Controls</h2>
+							<span class="image main"><img src="images/DACdisplay.png" alt="DAC GUI" /></span>
+							<p>
+								To run any of our feed systems, it requires a DAC and Controls system. For safety reasons, these operations must be done 
+								remotely and the operator must be able to see live data so that if anything goes wrong, they can account for it. My primary
+								responsibility in the lab is the maintennance and creation of this software. 
+								
+							</p>
+							<p>
+								This software's base functionality is recording live data from pressure transducers, thermocouplers, and lode cells and displaying them 
+								live to the operator via ethernet every 10 milliseconds. Additionally, it can also remotely actuate solenoids and stepper motors
+								with minimal latency. Since the lab's needs are always changing, this code is constantly adding additional functionality to suit the lab's
+								needs. There are also config files that the operater can edit to customize the DAC such as changing the sensor's polling rate and display rate
+								of these readings. Click <a href = "https://github.com/LPL-DAQ/flightAvionics" target="_blank"> here </a> to see the DAC's Github repository. 
+							</p>
+							<p>
+								This spring, the lab was also able to hot fire one of our engines, below is a video of our hot fire using the DAC software. 
+							</p>
+							<video controls>
+								<source src = "content/hotfireResult.mov">
+							</video>
+
+							<p class = "warning">
+								WARNING: Lower your volume!
+							</p>
+						</article>
+						<article id = "CP_FDB">
+							<h2 class="major">Custom Database</h2>
+							<span class="image main"><img src="images/FDB.jpeg" alt="FDB img" /></span>
+							<p>
+								This database implementation makes use of the FoundationDB (FDB) API. It utilizes FDB's key-value system to store data entries based on
+								primary keys and attributes. The setup employs a table-record structure that lets users create cursor objects. With these cursors, users 
+								can iterate through all records that satisfy the user's search criteria. Additionally, these cursors can update and delete these data
+								entries as well.
+							</p>
+							<p>
+								Cursors can iterate in either value order or based on the attribute's hash value. The implementation also handles relation algebra statements
+								between two cursors. This implementation adheres to the four properties of ACID, which ensures data integrity and mitigates the potential 
+								for data loss. 
+							</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/CSCIFrank/FDB" target = "_blank" class="button">Source Code</a></li>
+							</ul>
+						</article>
+						<article id = "CP_text">
+							<h2 class="major">Text Classifier</h2>
+							<span class="image main"><img src="images/textLayout.png" alt="text img" /></span>
+							<p>
+								This text classifier will classify a piece of text as either positive or negative. To pre-process the data, I first took the training 
+								data and tokenized each unique word by popularity. To ensure all data had the same length, I selected a review length that at least
+								70% of the training data had. For pre-processing purposes, any text above that length will be truncated and any length below it will
+								be zero padded. To yield better results, I added an embedding layer with the top 5,000 words.  
+							</p>
+							<p>
+								After pre-processing the data, I then used the training data to train 3 models to see their accuracies. All three of these models utilized
+								Keras to create multi-layered training models. The first model consists of three layers each consisting of 50 ReLU layer with dropout rates
+								of 25, 50, and 50 respectively. It then uses a single sigmoid neuron as its final layer. The second model consists of a 
+							</p>
+							<p>
+								Following the data preprocessing phase, I proceeded to employ the training data in training three distinct models, with a focus on assessing 
+								their respective accuracies. All three models were developed using the Keras framework, constructing intricate multi-layered training models. 
+								The initial model comprised three layers, each housing 50 ReLU units accompanied by dropout rates of 25%, 50%, and 50%, sequentially. A single 
+								sigmoid neuron served as the final layer. Moving on, the second model featured a one-dimensional convolutional network, while the third model 
+								was built around a long short-term memory recurrent neural network structure. In this structure, every word was treated as a 32-dimensional 
+								vector, succeeded by a dense layer comprising 256 ReLUs. The training and test accuracies for each of these models have also been provided for 
+								reference.
+							</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/CSCIFrank/textClassifier" target = "_blank" class="button">Source Code</a></li>
+							</ul>
+						</article>
+						<article id = "CP_perceptron">
+							<h2 class="major">Single Layered Perceptron</h2>
+							<span class="image main"><img src="images/perceptron.png" alt="perceptron img" /></span>
+							<p>
+								This classifier performs the task of categorizing movie reviews into either positive or negative sentiments. It employs a streamlined approach, 
+								featuring a solitary-layered neuron that is immediately succeeded by a sigmoid function. This architecture works harmoniously to ascertain whether
+								a given movie review holds a positive or negative stance.
+							</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/CSCIFrank/singleLayeredPerceptron" target = "_blank" class="button">Source Code</a></li>
+							</ul>
+
+						</article>
+						<article id = "CP_dice">
+							<h2 class="major">Fool's Dice</h2>
+							<span class="image main"><img src="images/dice.jpeg" alt="dice img" /></span>
+							<p>
+								The game Fool's Dice is a game where players roll a dice with the aim of reaching a specific score within a limited number of lives. 
+								Each player begins with both a permanent and temporary score of 0. Rolling a number from 1 to 5 allows the player to increase their 
+								temporary score by that amount. Conversely, rolling a 6 resets the temporary score to 0 and results in a deduction of 1 life.
+							</p>
+							<p>
+								After each roll, players face a choice: they can either transfer their temporary score to the permanent one, at the expense of a life, or 
+								they can opt to hold. The conclusion of the game hinges on either the exhaustion of the player's allotted lives or the attainment of 
+								a permanent score equal to or exceeding the designated target score.
+							</p>
+							<p>
+								Employing Markov's Decision Process, the following code functions to advise players whether to deposit their scores or to continue holding, 
+								based on the present game state.
+							</p>
+							<ul class="actions special">
+								<li><a href="https://github.com/CSCIFrank/MDP" target = "_blank" class="button">Source Code</a></li>
+							</ul>
+						</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(408) 819-8384</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">frankzhuang101@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/zhuang-frank/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/CSCIFrank" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Frank Zhuang 2023</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
